@@ -132,7 +132,7 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.right = "-400px";
+  document.getElementById("mySidenav").style.right = "-300px";
   document.querySelector(".bg-sidenavOpen").style.display = "none";
   document.body.classList.remove("openMenuActive");
 }

@@ -68,12 +68,12 @@ img {
 
 .sidenav {
   height: 100%;
-  width: 400px;
+  width: 300px;
   max-width: 100%;
   position: fixed;
   z-index: 99999;
   top: 0;
-  right: -400px;
+  right: -300px;
   background-color: #fff;
   box-shadow: 0 22px 22px rgba($color: #000000, $alpha: 5%);
   overflow-x: hidden;
