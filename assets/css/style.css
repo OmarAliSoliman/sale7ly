@@ -4,6 +4,10 @@
   font-family: myFont;
   src: url("../fonts/HelveticaNeueW23forSKY-Reg.ttf");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -67,13 +71,30 @@ img {
 .sidenav li {
   margin-bottom: 20px;
   text-align: right;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+.sidenav li:hover {
+  background-color: #fedd16;
+  border-radius: 5px;
+}
+.sidenav li:hover a {
+  color: #000 !important;
+}
+.sidenav .active {
+  background-color: #fedd16;
+  border-radius: 5px;
+}
+.sidenav .active a {
+  color: #000 !important;
 }
 .sidenav a {
   text-decoration: none;
   font-size: 18px;
   color: #000;
   transition: 0.3s;
-  padding-right: 56px;
+  padding-right: 5px;
   font-weight: 600;
 }
 .sidenav a:hover {
@@ -162,6 +183,7 @@ img {
   z-index: 9999;
   top: 0;
   transition: all 0.3s linear;
+  padding-top: 10px;
 }
 .myNavbra .container {
   position: relative;
@@ -171,6 +193,7 @@ img {
 }
 .myNavbra nav li {
   display: inline;
+  padding: 10px;
 }
 .myNavbra nav li a {
   color: #fff;
@@ -188,9 +211,15 @@ img {
   color: #fff;
   cursor: pointer;
 }
+.myNavbra nav li:hover {
+  background-color: #fedd16;
+  border-radius: 5px;
+}
+.myNavbra nav li:hover a {
+  color: #000 !important;
+}
 .myNavbra nav .active {
   background-color: #fedd16;
-  padding: 10px;
   border-radius: 5px;
 }
 .myNavbra nav .active a {

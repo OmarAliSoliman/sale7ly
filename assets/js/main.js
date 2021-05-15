@@ -105,6 +105,22 @@ $(document).ready(function () {
     time: 1000
   });
 
+
+
+  $('.myNavbra nav li').each((index, item)=>{
+    $(item).click(function(e){
+      // console.log("hi");
+      $(item).addClass('active').siblings().removeClass('active');
+    })
+  })
+
+  $('.sidenav li').each((index, item)=>{
+    $(item).click(function(e){
+      // console.log("hi");
+      $(item).addClass('active').siblings().removeClass('active');
+    })
+  })
+
 });
 
 
