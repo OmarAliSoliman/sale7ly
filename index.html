@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap-ar.min.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/flaticon.css">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div class="bg-sidenavOpen"></div>
+
+  <!-- side nav -->
+  <div id="mySidenav" class="sidenav">
+    <img class="logo" src="./assets/images/logo.png" alt="">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <i class="fas fa-times"></i>
+    </a>
+    <ul class="side-nav-links list-unstyled">
+      <li class="active"><a href="">الرئيسية</a></li>
+      <li><a href="">خدمات</a> </li>
+      <li><a href="">العملاء</a></li>
+      <li><a href="">من نحن</a></li>
+      <li><a href="">تحميل التطبيق</a></li>
+      <li><a href="">اتصل بنا</a></li>
+    </ul>
+  </div>
+
+  <!-- navbar -->
+  <div class="myNavbra">
+    <div class="container">
+      <nav class="desktopMenue">
+        <ul class="navList list-unstyled">
+          <li class="active"><a href="">الرئيسية</a></li>
+          <li><a href="">خدمات</a> </li>
+          <li><a href="">العملاء</a></li>
+          <li><a href="">من نحن</a></li>
+          <li><a href="">تحميل التطبيق</a></li>
+          <li><a href="">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars openSideMenue" onclick="openNav()"></i>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div class="navbar-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-6">
+          <a href="" class="logo">
+            <img src="./assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-7 col-md-6">
+          <div class="down">
+            <a href=""><img src="./assets/images/google.png" alt=""></a>
+            <a href=""><img src="./assets/images/apple.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div class="header" style="background-image: url('./assets/images/header.jpg');">
+    <div class="container">
+      <img class="header-img" src="./assets/images/header-img.png" alt="">
+      <div class="header-content">
+        <h5>تطبيق تنازل<br />
+          الأول من نوعه في المملكة
+        </h5>
+        <p>
+          تقديم خدمات تسويقية نيابة عن الغير من خلال تطبيق تنازل tanazul.net لعروض العمالة المهنية والمنزلية
+        </p>
+        <a href="" class="btn">شاهد المزيد</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="our-services">
+    <div class="container">
+      <div class="section-header">
+        <h5>خدماتنا</h5>
+      </div>
+      <div class="services-slider">
+        <div class="slider-item">
+          <a href="" class="serv-card">
+            <div class="card-img" style="background-image: url('./assets/images/serv-1.jpg');"></div>
+            <div class="card-title">
+              <h5 class="card-title-main">النجارة</h5>
+              <h5 class="card-title-hover">المزيد</h5>
+            </div>
+          </a>
+        </div>
+        <div class="slider-item">
+          <a href="" class="serv-card">
+            <div class="card-img" style="background-image: url('./assets/images/serv-2.jpg');"></div>
+            <div class="card-title">
+              <h5 class="card-title-main">السباكة</h5>
+              <h5 class="card-title-hover">المزيد</h5>
+            </div>
+          </a>
+        </div>
+        <div class="slider-item">
+          <a href="" class="serv-card">
+            <div class="card-img" style="background-image: url('./assets/images/serv-3.jpg');"></div>
+            <div class="card-title">
+              <h5 class="card-title-main">الالوميتال</h5>
+              <h5 class="card-title-hover">المزيد</h5>
+            </div>
+          </a>
+        </div>
+        <div class="slider-item">
+          <a href="" class="serv-card">
+            <div class="card-img" style="background-image: url('./assets/images/serv-4.jpg');"></div>
+            <div class="card-title">
+              <h5 class="card-title-main">الكهرباء</h5>
+              <h5 class="card-title-hover">المزيد</h5>
+            </div>
+          </a>
+        </div>
+        <div class="slider-item">
+          <a href="" class="serv-card">
+            <div class="card-img" style="background-image: url('./assets/images/serv-4.jpg');"></div>
+            <div class="card-title">
+              <h5 class="card-title-main">الكهرباء</h5>
+              <h5 class="card-title-hover">المزيد</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start characteristics -->
+  <div class="characteristics">
+    <div class="container">
+      <div class="section-header">
+        <h5>لماذا صلحلي</h5>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="characeristics-content">
+            <h5>هناك حقيقة مثبتة منذ زمن طويل وهي
+              أن المحتوى المقروء لصفحة ما سيلهي
+              القارئ عن التركيز </h5>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة </p>
+            <p>
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص
+              أو شكل توضع الفقرات في الصفحة
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+          <div class="characeristics-cards">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/positive-vote.png" alt="">
+                  </div>
+                  <h5 class="card-title">الاحترافية</h5>
+                  <p class="card-text">في التعامل مع كل المشاكل الفنية والتقنية للمنزل</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/clock.png" alt="">
+                  </div>
+                  <h5 class="card-title">السرعة</h5>
+                  <p class="card-text">في الاستجابة لطلبات العميل وتنفيذ المهمة بنجاح</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/worker.png" alt="">
+                  </div>
+                  <h5 class="card-title">الخبرة</h5>
+                  <p class="card-text">في التعامل مع كل انواع الاعطال المنظلية والتجارية</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end characteristics -->
+
+
+  <div class="store">
+    <div class="container">
+      <div class="section-header">
+        <h5>المتجر</h5>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-1.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-2.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-3.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-4.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-1.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-2.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-3.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-4.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-1.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-2.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-3.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <a href="" class="store-card">
+            <div class="card-img"><img src="./assets/images/store-4.jpg" alt=""></div>
+            <h5 class="card-title">شطاف</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start steps -->
+  <div class="steps" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 steps-img">
+          <img src="./assets/images/header-content-img.png" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 steps-content">
+          <div class="section-header">
+            <h5>خطوات الاستخدام</h5>
+            <p>بخطوات <span>سهلة وبسيطة</span> يمكنك استخدام
+              التطبيق والتمتع بمميزاته</p>
+          </div>
+          <ul class="steps-li">
+            <li>
+              <span class="number">01</span>
+              <span class="img">
+                <img src="./assets/images/icons8_App_Store_96px_1.png" alt="">
+              </span>
+              <h5>قم بتحميل التطبيق من المتجر الرسمي</h5>
+              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم </p>
+            </li>
+            <li>
+              <span class="number">02</span>
+              <span class="img">
+                <img src="./assets/images/icons8_user_96px.png" alt="">
+              </span>
+              <h5>قم بتحميل التطبيق من المتجر الرسمي</h5>
+              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم </p>
+            </li>
+            <li>
+              <span class="number">03</span>
+              <span class="img">
+                <img src="./assets/images/icons8_voucher_96px.png" alt="">
+              </span>
+              <h5>قم بتحميل التطبيق من المتجر الرسمي</h5>
+              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end steps -->
+
+  <!-- start screens -->
+  <div class="screen-app text-center">
+    <div class="container">
+      <!-- <img class="frame" src="./assets/images/frame.png" alt=""> -->
+      <div class="section-header">
+        <h5>شاشات التطبيق</h5>
+        <p>
+          تعرف على <span>شاشات التطبيق</span> المختلفة
+          بالخصائص والمميزات والعروض الحصرية
+        </p>
+      </div>
+      <div class="swiper-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/images/slider-5.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-3.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-4.png" alt="slide 1"></div>
+          <div class="swiper-slide"><img src="./assets/images/slider-2.png" alt="slide 1"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end screens -->
+
+
+  <!-- start live show -->
+  <div class="live-show" style="background-color: #000;" style="display: none;">
+    <div class="container">
+      <h5 class="header">العرض الحي للتطبيق</h5>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <img class="live-before" src="./assets/images/live-before.png" alt="">
+          <img class="live-img live-img-2" src="./assets/images/live-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end live show -->
+
+  <!-- start downlad section -->
+  <div class="download-app text-center">
+    <div class="container">
+      <h5>تحميل التطبيق
+      </h5>
+      <p>
+        صيانة منصة الكترونية رائده لتسهيل الحصول على خدمات الصيانة المنزلية بكل سهوله وثقه .
+        حمل تطبيق صيانة وشاهد أعمالنا وتمتع بخدمة الصيانة الآن
+      </p>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 play-parent">
+          <a href="">
+            <img src="./assets/images/aplle-down.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 apple-parent">
+          <a href="">
+            <img src="./assets/images/google-down.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end downlad section -->
+
+  <!-- start faq -->
+  <div class="faq" style="background-color: #F7F7F7;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h5>الأسئلة الأكثر شيوعا</h5>
+        <p>تعرف على <span>شاشات التطبيق</span> المختلفة
+          بالخصائص والمميزات والعروض الحصرية</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <h5 class="card-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما ؟ </h5>
+            <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+              على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-12">
+          <div class="ask-us text-center">
+            <h5>اذا كان لديكم أسئلة اخرى </h5>
+            <p>يسعدنا تواصلكم معنا عبر البريد jeremy.gomez@mail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end faq -->
+
+  <div class="numbers">
+    <div class="container">
+      <div class="numbers-parent">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-icon"><i class="flaticon-abc-block"></i></div>
+              <h6 class="card-number counter">7500</h6>
+              <h5 class="card-title">عدد الطلبات</h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-icon"><i class="flaticon-people"></i></div>
+              <h6 class="card-number counter">4250</h6>
+              <h5 class="card-title">عدد العملاء</h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-icon"><i class="flaticon-agriculture"></i></div>
+              <h6 class="card-number counter">42</h6>
+              <h5 class="card-title">عدد الفنيين</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="testeminail">
+    <div class="container">
+      <img class="title-img" src="./assets/images/title.svg" alt="">
+      <div class="section-header">
+        <h5>اراء العملاء</h5>
+      </div>
+      <div class="teste-slider">
+        <div class="slider-item">
+          <div class="teste-card">
+            <div class="card-img" style="background-image: url('./assets/images/person.png');"></div>
+            <h5 class="card-title">محمد احمد</h5>
+            <p class="card-text">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+              العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+            </p>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="teste-card">
+            <div class="card-img" style="background-image: url('./assets/images/person.png');"></div>
+            <h5 class="card-title">محمد احمد</h5>
+            <p class="card-text">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+              العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start download -->
+  <div class="download">
+    <div class="container">
+      <img class="footer-logo" src="./assets/images/logo.png" alt="">
+      <p>
+        صيانة منصة الكترونية رائده لتسهيل الحصول على خدمات الصيانة المنزلية بكل سهوله وثقه . حمل تطبيق صيانة وشاهد
+        أعمالنا وتمتع بخدمة الصيانة الآن
+
+
+      </p>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 play-parent">
+          <a href="">
+            <img src="./assets/images/google.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 apple-parent">
+          <a href="">
+            <img src="./assets/images/apple.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end download -->
+
+
+  <div class="footer" id="contactus">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="site">
+            <img src="./assets/images/logo.png">
+            <ul class="list-unstyled">
+              <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="contact">
+            <h3>تواصل معنا</h3>
+            <h3>الخط الساخن 01201111341</h3>
+            <p>  <i class="fas fa-location-arrow"></i> القاهرة، مدينة نصر</p>
+            <p>  <i class="fas fa-phone"></i> +2014587534  </p>
+            <p> <i class="fas fa-envelope"></i>  mail@mail.com  </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="pages">
+            <h3 class="links">روابط مهمة</h3>
+            <ul class="list-unstyled">
+              <li> <a href="#home"> الرئيسية </a> </li>
+              <li> <a href="#aboutus"> من نحن </a> </li>
+              <li> <a href="#contactus"> توصل معانا </a> </li>
+              <li> <a href="#apps">تحميل التطبيق</a> </li>
+              <li> <a href="#info"> العملاء </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">جميع الحقوق محفوظة &copy; 2021</p>
+    </div>
+  </div>
+
+
+
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
