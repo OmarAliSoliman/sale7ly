@@ -9,7 +9,7 @@ $mainColor: rgb(254, 221, 22);
 
 $mainFont: myFont;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -87,7 +87,7 @@ img {
     padding: 10px;
     width: 90%;
     margin: auto;
-    &:hover{
+    &:hover {
       background-color: $mainColor;
       border-radius: 5px;
       a {
@@ -236,7 +236,7 @@ img {
           cursor: pointer;
         }
       }
-      &:hover{
+      &:hover {
         background-color: $mainColor;
         border-radius: 5px;
         a {
@@ -421,24 +421,10 @@ img {
       margin: 0;
       padding: 15px;
       color: #000;
-    }
-    .card-title-hover {
-      // display: none;
-      padding: 15px;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: -60px;
-      background-color: #000;
-      color: #fff;
-      margin: 0;
-      font-size: 20px;
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
-      transition: all 0.2s linear;
-    }
+      transition: all 0.2s linear;    }
   }
   &:hover {
     .card-img {
@@ -446,8 +432,9 @@ img {
         background-color: rgba(254, 221, 22, 0.5);
       }
     }
-    .card-title-hover {
-      top: 0;
+    .card-title-main {
+      background-color: #000;
+      color: #fff;
     }
   }
 }
@@ -796,160 +783,7 @@ img {
   }
 }
 
-.live-show {
-  text-align: center;
-  margin-top: 100px;
-  height: 630px;
-  display: none;
-  position: relative;
-  .header {
-    font-size: 64px;
-    color: $mainColor;
-    font-weight: bold;
-    margin-top: 90px;
-    height: auto;
-    margin-bottom: 71px;
-  }
-  .live-img {
-    width: auto;
-    position: relative;
-    z-index: 3;
-  }
-  .agent-img {
-    width: auto;
-    position: absolute;
-    left: -14%;
-    top: 20%;
-  }
-  .live-before {
-    width: auto;
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
-    z-index: 2;
-  }
-}
 
-.download-app {
-  display: none;
-  margin-top: 300px;
-  background-image: url("../images/download.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding: 150px 0 150px 0;
-  background-attachment: fixed;
-  &::after {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.55);
-  }
-  h5 {
-    font-size: 40px;
-    margin-bottom: 35px;
-    font-weight: bold;
-  }
-  p {
-    font-size: 25px;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 9;
-    color: #fff;
-    line-height: 35px;
-  }
-  img {
-    width: auto;
-    position: relative;
-    z-index: 9;
-  }
-  .play-parent {
-    text-align: left;
-  }
-  .apple-parent {
-    text-align: right;
-  }
-}
-
-.faq {
-  display: none;
-  margin-top: 105px;
-  padding-top: 60px;
-  padding-bottom: 90px;
-  .section-header {
-    margin-bottom: 40px;
-    h5 {
-      font-weight: bold;
-      font-size: 18px;
-      position: relative;
-      z-index: 4 !important;
-      margin-bottom: 46px;
-      display: inline-block;
-      &::before {
-        @extend %circle-after-section-header;
-        z-index: 1;
-      }
-    }
-    p {
-      font-size: 32px;
-      font-weight: bold;
-      width: 50%;
-      margin: auto;
-      span {
-        color: $mainColor;
-      }
-    }
-  }
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    height: 140px;
-    margin-bottom: 18px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.075);
-    overflow: hidden;
-    .card-title {
-      font-weight: bold;
-      font-size: 16px;
-      position: relative;
-      z-index: 3;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 74px;
-        height: 74px;
-        border-radius: 50%;
-        background-color: $mainColor;
-        right: -40px;
-        top: -40px;
-        z-index: -1;
-      }
-    }
-    .card-text {
-      font-size: 16px;
-      color: #606060;
-      margin-top: 10px;
-    }
-  }
-  .ask-us {
-    margin-top: 77px;
-    h5 {
-      font-weight: bold;
-      color: $mainColor;
-      font-size: 16px;
-    }
-    p {
-      font-size: 16px;
-      color: #000;
-    }
-  }
-}
 
 .numbers {
   margin-top: 140px;
@@ -971,6 +805,13 @@ img {
       margin: 0;
       margin-bottom: 10px;
       font-family: "KoHo", sans-serif;
+      display: inline-block;
+    }
+    .sign-number{
+      font-size: 30px;
+      margin: 0;
+      margin-bottom: 10px;
+      // font-family: "KoHo", sans-serif;
     }
     .card-title {
       font-size: 30px;
@@ -994,6 +835,12 @@ img {
   position: relative;
   // padding: 150px 0 150px 0;
   background-attachment: fixed;
+  h5{
+    font-size: 30px;
+    color: $mainColor;
+    position: relative;
+    z-index: 3;
+  }
   &::after {
     position: absolute;
     top: 0;
@@ -1155,6 +1002,10 @@ img {
   margin: 0 0 0 10px;
   color: $mainColor;
 }
+.contact a{
+  color: #fff;
+}
+
 .pages h3 {
   color: #fedd16;
   font-size: 18px;
