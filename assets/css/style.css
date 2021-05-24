@@ -253,7 +253,7 @@ img {
 }
 .header .header-img {
   position: absolute;
-  width: 311px;
+  width: 460px;
   max-height: 596px;
   left: 20px;
   top: 220px;
@@ -954,6 +954,88 @@ img {
   bottom: 0;
   top: 0;
   z-index: 99;
+}
+
+/* start chat popup */
+.open-button {
+  position: fixed;
+  right: 10px;
+  bottom: 25px;
+  font-size: 49px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: #fedd16;
+  cursor: pointer;
+  z-index: 9999;
+  outline: none;
+  transition: all 0.5s linear;
+}
+
+@media (max-width: 576px) {
+  .open-button {
+    right: 19px;
+  }
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  z-index: 999;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+  /* Add styles to the form container */
+  /* Full-width textarea */
+  /* When the textarea gets focus, do something */
+  /* Set a style for the submit/send button */
+  /* Add a red background color to the cancel button */
+  /* Add some hover effects to buttons */
+  /* end chat popup */
+}
+.chat-popup .form-container {
+  max-width: 300px;
+  padding: 10px;
+  padding-top: 40px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+.chat-popup .form-group {
+  margin-bottom: 5px;
+}
+.chat-popup .form-container textarea {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  min-height: 150px;
+}
+.chat-popup .form-container .btn {
+  background-color: #fedd16;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 35px;
+  line-height: 40px;
+  opacity: 0.8;
+}
+.chat-popup .form-container .cancel {
+  color: #f00;
+  background-color: transparent !important;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.chat-popup .form-container .btn:hover,
+.chat-popup .open-button:hover {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,700;1,400&display=swap");
 
-$mainColor: rgb(254, 221, 22);
+$mainColor: #fedd16;
 
 @font-face {
   font-family: myFont;
@@ -280,7 +280,7 @@ img {
   }
   .header-img {
     position: absolute;
-    width: 311px;
+    width: 460px;
     max-height: 596px;
     left: 20px;
     top: 220px;
@@ -424,7 +424,8 @@ img {
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
       -o-transition: all 0.2s linear;
-      transition: all 0.2s linear;    }
+      transition: all 0.2s linear;
+    }
   }
   &:hover {
     .card-img {
@@ -783,8 +784,6 @@ img {
   }
 }
 
-
-
 .numbers {
   margin-top: 140px;
   .numbers-parent {
@@ -807,7 +806,7 @@ img {
       font-family: "KoHo", sans-serif;
       display: inline-block;
     }
-    .sign-number{
+    .sign-number {
       font-size: 30px;
       margin: 0;
       margin-bottom: 10px;
@@ -835,7 +834,7 @@ img {
   position: relative;
   // padding: 150px 0 150px 0;
   background-attachment: fixed;
-  h5{
+  h5 {
     font-size: 30px;
     color: $mainColor;
     position: relative;
@@ -1002,7 +1001,7 @@ img {
   margin: 0 0 0 10px;
   color: $mainColor;
 }
-.contact a{
+.contact a {
   color: #fff;
 }
 
@@ -1032,6 +1031,104 @@ img {
   bottom: 0;
   top: 0;
   z-index: 99;
+}
+
+/* start chat popup */
+.open-button {
+  position: fixed;
+  right: 10px;
+  bottom: 25px;
+  font-size: 49px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: $mainColor;
+  cursor: pointer;
+  z-index: 9999;
+  // display: none;
+  outline: none;
+  transition: all 0.5s linear;
+}
+
+@media (max-width: 576px) {
+  .open-button {
+    right: 19px;
+  }
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  z-index: 999;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 10px 22px rgba($color: #000000, $alpha: 10%);
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+  }
+
+  .form-group{
+    margin-bottom: 5px;
+  }
+
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    // padding: 15px;
+    margin: 5px 0 5px 0;
+    // background: #f1f1f1;
+    // resize: none;
+    min-height: 150px;
+  }
+
+  /* When the textarea gets focus, do something */
+  // .form-container textarea:focus {
+  //   background-color: #ddd;
+  //   outline: none;
+  // }
+
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: $mainColor;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 35px;
+    line-height: 40px;
+    opacity: 0.8;
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    color: #f00;
+    background-color: transparent !important;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+
+  /* end chat popup */
 }
 
 @media (max-width: 800px) {
