@@ -158,3 +158,12 @@ function closeNav() {
   document.querySelector(".bg-sidenavOpen").style.display = "none";
   document.body.classList.remove("openMenuActive");
 }
+
+
+const splash = document.querySelector(".splash");
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  setTimeout(() => {
+    splash.classList.add("displayNone");
+  });
+});
